@@ -9,6 +9,7 @@ License:	Artistic
 Group:		Development/Perl
 Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/authors/id/D/DK/DKYGER/%{upstream_name}-%{upstream_version}.tar.gz
+BuildRequires:	make
 BuildRequires:	perl-devel
 Requires:	perl(Exporter)
 BuildArch:	noarch
