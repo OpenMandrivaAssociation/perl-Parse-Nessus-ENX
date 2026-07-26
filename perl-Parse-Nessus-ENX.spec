@@ -1,14 +1,12 @@
 %define upstream_name    Parse-Nessus-ENX
-%define upstream_version 1.1
-
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	1.1
+Release:	5
 Summary:	Extract information from Nessus Extend NSR files
 License:	Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/D/DK/DKYGER/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/%{upstream_name}
+Source0:	http://search.cpan.org/CPAN/authors/id/D/DK/DKYGER/%{upstream_name}-%{version}.tar.gz
 BuildRequires:	make
 BuildRequires:	perl-devel
 Requires:	perl(Exporter)
@@ -23,7 +21,7 @@ listening on a given port or all IPs associated with a specified plugin
 id.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
